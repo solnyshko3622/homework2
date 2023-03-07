@@ -10,4 +10,5 @@ cd dir = do
 
 su :: EnvironmentM a -> EnvironmentM a
 su env = do
-  isSuperUser <- True
+  return $ (isSuperUser "True")
+  
